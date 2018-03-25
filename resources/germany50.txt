@@ -1,0 +1,830 @@
+?SNDlib native format; type: network; version: 1.0
+# network germany50
+
+# NODE SECTION
+#
+# <node_id> [(<longitude>, <latitude>)]
+
+NODES (
+  Aachen ( 6.04 50.76 )
+  Augsburg ( 10.90 48.33 )
+  Bayreuth ( 11.59 49.93 )
+  Berlin ( 13.39 52.52 )
+  Bielefeld ( 8.50 52.04 )
+  Braunschweig ( 10.55 52.28 )
+  Bremen ( 8.85 53.11 )
+  Bremerhaven ( 8.58 53.54 )
+  Chemnitz ( 12.93 50.84 )
+  Darmstadt ( 8.65 49.89 )
+  Dortmund ( 7.45 51.51 )
+  Dresden ( 13.73 51.03 )
+  Duesseldorf ( 6.77 51.25 )
+  Erfurt ( 11.04 50.98 )
+  Essen ( 7.02 51.46 )
+  Flensburg ( 9.45 54.77 )
+  Frankfurt ( 8.71 50.12 )
+  Freiburg ( 7.80 47.98 )
+  Fulda ( 9.69 50.56 )
+  Giessen ( 8.67 50.57 )
+  Greifswald ( 13.40 54.09 )
+  Hamburg ( 9.99 53.57 )
+  Hannover ( 9.72 52.38 )
+  Kaiserslautern ( 7.75 49.43 )
+  Karlsruhe ( 8.41 49.01 )
+  Kassel ( 9.51 51.32 )
+  Kempten ( 10.32 47.72 )
+  Kiel ( 10.12 54.34 )
+  Koblenz ( 7.52 50.40 )
+  Koeln ( 6.87 50.94 )
+  Konstanz ( 9.18 47.66 )
+  Leipzig ( 12.38 51.34 )
+  Magdeburg ( 11.64 52.14 )
+  Mannheim ( 8.49 49.49 )
+  Muenchen ( 11.57 48.15 )
+  Muenster ( 7.60 51.97 )
+  Norden ( 7.21 53.60 )
+  Nuernberg ( 11.03 49.57 )
+  Oldenburg ( 8.21 53.11 )
+  Osnabrueck ( 8.03 52.28 )
+  Passau ( 13.46 48.57 )
+  Regensburg ( 12.09 49.00 )
+  Saarbruecken ( 7.03 49.23 )
+  Schwerin ( 11.45 53.55 )
+  Siegen ( 8.03 50.91 )
+  Stuttgart ( 9.10 48.74 )
+  Trier ( 6.68 49.75 )
+  Ulm ( 9.99 48.40 )
+  Wesel ( 6.37 51.39 )
+  Wuerzburg ( 9.97 49.78 )
+)
+
+# LINK SECTION
+#
+# <link_id> ( <source> <target> ) <pre_installed_capacity> <pre_installed_capacity_cost> <routing_cost> <setup_cost> ( {<module_capacity> <module_cost>}* )
+
+LINKS (
+  L1 ( Duesseldorf Essen ) 0.00 0.00 0.00 0.00 ( 40.00 3290.00 )
+  L2 ( Dortmund Essen ) 0.00 0.00 0.00 0.00 ( 40.00 3290.00 )
+  L3 ( Wesel Essen ) 0.00 0.00 0.00 0.00 ( 40.00 3290.00 )
+  L4 ( Koeln Duesseldorf ) 0.00 0.00 0.00 0.00 ( 40.00 3290.00 )
+  L5 ( Aachen Koeln ) 0.00 0.00 0.00 0.00 ( 40.00 3290.00 )
+  L6 ( Koblenz Koeln ) 0.00 0.00 0.00 0.00 ( 40.00 3290.00 )
+  L7 ( Muenster Dortmund ) 0.00 0.00 0.00 0.00 ( 40.00 3290.00 )
+  L8 ( Siegen Dortmund ) 0.00 0.00 0.00 0.00 ( 40.00 3720.00 )
+  L9 ( Kassel Dortmund ) 0.00 0.00 0.00 0.00 ( 40.00 3720.00 )
+  L10 ( Wesel Aachen ) 0.00 0.00 0.00 0.00 ( 40.00 3720.00 )
+  L11 ( Trier Aachen ) 0.00 0.00 0.00 0.00 ( 40.00 3720.00 )
+  L12 ( Bielefeld Muenster ) 0.00 0.00 0.00 0.00 ( 40.00 3290.00 )
+  L13 ( Osnabrueck Muenster ) 0.00 0.00 0.00 0.00 ( 40.00 3290.00 )
+  L14 ( Siegen Koblenz ) 0.00 0.00 0.00 0.00 ( 40.00 3290.00 )
+  L15 ( Frankfurt Koblenz ) 0.00 0.00 0.00 0.00 ( 40.00 3720.00 )
+  L16 ( Kaiserslautern Koblenz ) 0.00 0.00 0.00 0.00 ( 40.00 3720.00 )
+  L17 ( Trier Koblenz ) 0.00 0.00 0.00 0.00 ( 40.00 3720.00 )
+  L18 ( Bielefeld Siegen ) 0.00 0.00 0.00 0.00 ( 40.00 3720.00 )
+  L19 ( Giessen Siegen ) 0.00 0.00 0.00 0.00 ( 40.00 3290.00 )
+  L20 ( Oldenburg Wesel ) 0.00 0.00 0.00 0.00 ( 40.00 4150.00 )
+  L21 ( Norden Wesel ) 0.00 0.00 0.00 0.00 ( 40.00 4150.00 )
+  L22 ( Leipzig Berlin ) 0.00 0.00 0.00 0.00 ( 40.00 3720.00 )
+  L23 ( Dresden Berlin ) 0.00 0.00 0.00 0.00 ( 40.00 4150.00 )
+  L24 ( Schwerin Berlin ) 0.00 0.00 0.00 0.00 ( 40.00 4150.00 )
+  L25 ( Magdeburg Berlin ) 0.00 0.00 0.00 0.00 ( 40.00 3720.00 )
+  L26 ( Greifswald Berlin ) 0.00 0.00 0.00 0.00 ( 40.00 4150.00 )
+  L27 ( Dresden Leipzig ) 0.00 0.00 0.00 0.00 ( 40.00 3720.00 )
+  L28 ( Erfurt Leipzig ) 0.00 0.00 0.00 0.00 ( 40.00 3720.00 )
+  L29 ( Magdeburg Leipzig ) 0.00 0.00 0.00 0.00 ( 40.00 3720.00 )
+  L30 ( Bayreuth Leipzig ) 0.00 0.00 0.00 0.00 ( 40.00 4150.00 )
+  L31 ( Erfurt Dresden ) 0.00 0.00 0.00 0.00 ( 40.00 4150.00 )
+  L32 ( Chemnitz Dresden ) 0.00 0.00 0.00 0.00 ( 40.00 3290.00 )
+  L33 ( Chemnitz Erfurt ) 0.00 0.00 0.00 0.00 ( 40.00 3720.00 )
+  L34 ( Kassel Erfurt ) 0.00 0.00 0.00 0.00 ( 40.00 3720.00 )
+  L35 ( Wuerzburg Erfurt ) 0.00 0.00 0.00 0.00 ( 40.00 3720.00 )
+  L36 ( Bayreuth Chemnitz ) 0.00 0.00 0.00 0.00 ( 40.00 3720.00 )
+  L37 ( Magdeburg Schwerin ) 0.00 0.00 0.00 0.00 ( 40.00 4150.00 )
+  L38 ( Greifswald Schwerin ) 0.00 0.00 0.00 0.00 ( 40.00 3720.00 )
+  L39 ( Hamburg Schwerin ) 0.00 0.00 0.00 0.00 ( 40.00 3720.00 )
+  L40 ( Kiel Schwerin ) 0.00 0.00 0.00 0.00 ( 40.00 3720.00 )
+  L41 ( Braunschweig Magdeburg ) 0.00 0.00 0.00 0.00 ( 40.00 3290.00 )
+  L42 ( Kiel Hamburg ) 0.00 0.00 0.00 0.00 ( 40.00 3720.00 )
+  L43 ( Hannover Hamburg ) 0.00 0.00 0.00 0.00 ( 40.00 3720.00 )
+  L44 ( Braunschweig Hamburg ) 0.00 0.00 0.00 0.00 ( 40.00 3720.00 )
+  L45 ( Oldenburg Bremen ) 0.00 0.00 0.00 0.00 ( 40.00 3290.00 )
+  L46 ( Bremerhaven Bremen ) 0.00 0.00 0.00 0.00 ( 40.00 3290.00 )
+  L47 ( Hannover Bremen ) 0.00 0.00 0.00 0.00 ( 40.00 3290.00 )
+  L48 ( Flensburg Kiel ) 0.00 0.00 0.00 0.00 ( 40.00 3290.00 )
+  L49 ( Norden Oldenburg ) 0.00 0.00 0.00 0.00 ( 40.00 3720.00 )
+  L50 ( Osnabrueck Oldenburg ) 0.00 0.00 0.00 0.00 ( 40.00 3720.00 )
+  L51 ( Bremerhaven Flensburg ) 0.00 0.00 0.00 0.00 ( 40.00 3720.00 )
+  L52 ( Bielefeld Hannover ) 0.00 0.00 0.00 0.00 ( 40.00 3720.00 )
+  L53 ( Braunschweig Hannover ) 0.00 0.00 0.00 0.00 ( 40.00 3720.00 )
+  L54 ( Osnabrueck Hannover ) 0.00 0.00 0.00 0.00 ( 40.00 3720.00 )
+  L55 ( Braunschweig Bielefeld ) 0.00 0.00 0.00 0.00 ( 40.00 3720.00 )
+  L56 ( Kassel Braunschweig ) 0.00 0.00 0.00 0.00 ( 40.00 3720.00 )
+  L57 ( Giessen Kassel ) 0.00 0.00 0.00 0.00 ( 40.00 3720.00 )
+  L58 ( Fulda Kassel ) 0.00 0.00 0.00 0.00 ( 40.00 3720.00 )
+  L59 ( Darmstadt Frankfurt ) 0.00 0.00 0.00 0.00 ( 40.00 3290.00 )
+  L60 ( Giessen Frankfurt ) 0.00 0.00 0.00 0.00 ( 40.00 3290.00 )
+  L61 ( Fulda Frankfurt ) 0.00 0.00 0.00 0.00 ( 40.00 3720.00 )
+  L62 ( Mannheim Darmstadt ) 0.00 0.00 0.00 0.00 ( 40.00 3290.00 )
+  L63 ( Kaiserslautern Darmstadt ) 0.00 0.00 0.00 0.00 ( 40.00 3720.00 )
+  L64 ( Karlsruhe Mannheim ) 0.00 0.00 0.00 0.00 ( 40.00 3290.00 )
+  L65 ( Saarbruecken Kaiserslautern ) 0.00 0.00 0.00 0.00 ( 40.00 3290.00 )
+  L66 ( Karlsruhe Kaiserslautern ) 0.00 0.00 0.00 0.00 ( 40.00 3290.00 )
+  L67 ( Fulda Giessen ) 0.00 0.00 0.00 0.00 ( 40.00 3290.00 )
+  L68 ( Saarbruecken Trier ) 0.00 0.00 0.00 0.00 ( 40.00 3290.00 )
+  L69 ( Wuerzburg Fulda ) 0.00 0.00 0.00 0.00 ( 40.00 3720.00 )
+  L70 ( Karlsruhe Saarbruecken ) 0.00 0.00 0.00 0.00 ( 40.00 3720.00 )
+  L71 ( Karlsruhe Stuttgart ) 0.00 0.00 0.00 0.00 ( 40.00 3290.00 )
+  L72 ( Ulm Stuttgart ) 0.00 0.00 0.00 0.00 ( 40.00 3290.00 )
+  L73 ( Konstanz Stuttgart ) 0.00 0.00 0.00 0.00 ( 40.00 3720.00 )
+  L74 ( Wuerzburg Stuttgart ) 0.00 0.00 0.00 0.00 ( 40.00 3720.00 )
+  L75 ( Freiburg Karlsruhe ) 0.00 0.00 0.00 0.00 ( 40.00 3720.00 )
+  L76 ( Augsburg Ulm ) 0.00 0.00 0.00 0.00 ( 40.00 3290.00 )
+  L77 ( Freiburg Konstanz ) 0.00 0.00 0.00 0.00 ( 40.00 3720.00 )
+  L78 ( Kempten Konstanz ) 0.00 0.00 0.00 0.00 ( 40.00 3720.00 )
+  L79 ( Augsburg Muenchen ) 0.00 0.00 0.00 0.00 ( 40.00 3290.00 )
+  L80 ( Kempten Muenchen ) 0.00 0.00 0.00 0.00 ( 40.00 3720.00 )
+  L81 ( Passau Muenchen ) 0.00 0.00 0.00 0.00 ( 40.00 3720.00 )
+  L82 ( Nuernberg Muenchen ) 0.00 0.00 0.00 0.00 ( 40.00 3720.00 )
+  L83 ( Regensburg Muenchen ) 0.00 0.00 0.00 0.00 ( 40.00 3720.00 )
+  L84 ( Wuerzburg Augsburg ) 0.00 0.00 0.00 0.00 ( 40.00 4150.00 )
+  L85 ( Regensburg Passau ) 0.00 0.00 0.00 0.00 ( 40.00 3720.00 )
+  L86 ( Bayreuth Nuernberg ) 0.00 0.00 0.00 0.00 ( 40.00 3290.00 )
+  L87 ( Wuerzburg Nuernberg ) 0.00 0.00 0.00 0.00 ( 40.00 3720.00 )
+  L88 ( Regensburg Nuernberg ) 0.00 0.00 0.00 0.00 ( 40.00 3720.00 )
+)
+
+# DEMAND SECTION
+#
+# <demand_id> ( <source> <target> ) <routing_unit> <demand_value> <max_path_length>
+
+DEMANDS (
+  Essen_Duesseldorf ( Essen Duesseldorf ) 1 34.00 UNLIMITED
+  Essen_Koeln ( Essen Koeln ) 1 9.00 UNLIMITED
+  Essen_Dortmund ( Essen Dortmund ) 1 9.00 UNLIMITED
+  Essen_Aachen ( Essen Aachen ) 1 2.00 UNLIMITED
+  Essen_Muenster ( Essen Muenster ) 1 2.00 UNLIMITED
+  Essen_Koblenz ( Essen Koblenz ) 1 2.00 UNLIMITED
+  Essen_Siegen ( Essen Siegen ) 1 2.00 UNLIMITED
+  Essen_Wesel ( Essen Wesel ) 1 2.00 UNLIMITED
+  Essen_Berlin ( Essen Berlin ) 1 2.00 UNLIMITED
+  Essen_Leipzig ( Essen Leipzig ) 1 2.00 UNLIMITED
+  Essen_Dresden ( Essen Dresden ) 1 2.00 UNLIMITED
+  Essen_Erfurt ( Essen Erfurt ) 1 2.00 UNLIMITED
+  Essen_Chemnitz ( Essen Chemnitz ) 1 2.00 UNLIMITED
+  Essen_Schwerin ( Essen Schwerin ) 1 2.00 UNLIMITED
+  Essen_Magdeburg ( Essen Magdeburg ) 1 2.00 UNLIMITED
+  Essen_Hamburg ( Essen Hamburg ) 1 2.00 UNLIMITED
+  Essen_Bremen ( Essen Bremen ) 1 2.00 UNLIMITED
+  Essen_Kiel ( Essen Kiel ) 1 2.00 UNLIMITED
+  Essen_Norden ( Essen Norden ) 1 2.00 UNLIMITED
+  Essen_Hannover ( Essen Hannover ) 1 2.00 UNLIMITED
+  Essen_Bielefeld ( Essen Bielefeld ) 1 2.00 UNLIMITED
+  Essen_Osnabrueck ( Essen Osnabrueck ) 1 2.00 UNLIMITED
+  Essen_Frankfurt ( Essen Frankfurt ) 1 2.00 UNLIMITED
+  Essen_Darmstadt ( Essen Darmstadt ) 1 2.00 UNLIMITED
+  Essen_Mannheim ( Essen Mannheim ) 1 2.00 UNLIMITED
+  Essen_Saarbruecken ( Essen Saarbruecken ) 1 2.00 UNLIMITED
+  Essen_Stuttgart ( Essen Stuttgart ) 1 2.00 UNLIMITED
+  Essen_Karlsruhe ( Essen Karlsruhe ) 1 2.00 UNLIMITED
+  Essen_Muenchen ( Essen Muenchen ) 1 2.00 UNLIMITED
+  Essen_Augsburg ( Essen Augsburg ) 1 2.00 UNLIMITED
+  Essen_Nuernberg ( Essen Nuernberg ) 1 2.00 UNLIMITED
+  Essen_Wuerzburg ( Essen Wuerzburg ) 1 2.00 UNLIMITED
+  Duesseldorf_Koeln ( Duesseldorf Koeln ) 1 76.00 UNLIMITED
+  Duesseldorf_Dortmund ( Duesseldorf Dortmund ) 1 25.00 UNLIMITED
+  Duesseldorf_Aachen ( Duesseldorf Aachen ) 1 3.00 UNLIMITED
+  Duesseldorf_Muenster ( Duesseldorf Muenster ) 1 6.00 UNLIMITED
+  Duesseldorf_Koblenz ( Duesseldorf Koblenz ) 1 2.00 UNLIMITED
+  Duesseldorf_Siegen ( Duesseldorf Siegen ) 1 2.00 UNLIMITED
+  Duesseldorf_Wesel ( Duesseldorf Wesel ) 1 5.00 UNLIMITED
+  Duesseldorf_Berlin ( Duesseldorf Berlin ) 1 4.00 UNLIMITED
+  Duesseldorf_Leipzig ( Duesseldorf Leipzig ) 1 2.00 UNLIMITED
+  Duesseldorf_Dresden ( Duesseldorf Dresden ) 1 2.00 UNLIMITED
+  Duesseldorf_Erfurt ( Duesseldorf Erfurt ) 1 2.00 UNLIMITED
+  Duesseldorf_Schwerin ( Duesseldorf Schwerin ) 1 2.00 UNLIMITED
+  Duesseldorf_Magdeburg ( Duesseldorf Magdeburg ) 1 2.00 UNLIMITED
+  Duesseldorf_Greifswald ( Duesseldorf Greifswald ) 1 2.00 UNLIMITED
+  Duesseldorf_Hamburg ( Duesseldorf Hamburg ) 1 15.00 UNLIMITED
+  Duesseldorf_Bremen ( Duesseldorf Bremen ) 1 2.00 UNLIMITED
+  Duesseldorf_Kiel ( Duesseldorf Kiel ) 1 2.00 UNLIMITED
+  Duesseldorf_Oldenburg ( Duesseldorf Oldenburg ) 1 2.00 UNLIMITED
+  Duesseldorf_Flensburg ( Duesseldorf Flensburg ) 1 2.00 UNLIMITED
+  Duesseldorf_Bremerhaven ( Duesseldorf Bremerhaven ) 1 2.00 UNLIMITED
+  Duesseldorf_Norden ( Duesseldorf Norden ) 1 2.00 UNLIMITED
+  Duesseldorf_Hannover ( Duesseldorf Hannover ) 1 19.00 UNLIMITED
+  Duesseldorf_Bielefeld ( Duesseldorf Bielefeld ) 1 4.00 UNLIMITED
+  Duesseldorf_Braunschweig ( Duesseldorf Braunschweig ) 1 2.00 UNLIMITED
+  Duesseldorf_Osnabrueck ( Duesseldorf Osnabrueck ) 1 2.00 UNLIMITED
+  Duesseldorf_Kassel ( Duesseldorf Kassel ) 1 2.00 UNLIMITED
+  Duesseldorf_Frankfurt ( Duesseldorf Frankfurt ) 1 33.00 UNLIMITED
+  Duesseldorf_Darmstadt ( Duesseldorf Darmstadt ) 1 2.00 UNLIMITED
+  Duesseldorf_Mannheim ( Duesseldorf Mannheim ) 1 2.00 UNLIMITED
+  Duesseldorf_Giessen ( Duesseldorf Giessen ) 1 2.00 UNLIMITED
+  Duesseldorf_Trier ( Duesseldorf Trier ) 1 2.00 UNLIMITED
+  Duesseldorf_Fulda ( Duesseldorf Fulda ) 1 2.00 UNLIMITED
+  Duesseldorf_Saarbruecken ( Duesseldorf Saarbruecken ) 1 2.00 UNLIMITED
+  Duesseldorf_Stuttgart ( Duesseldorf Stuttgart ) 1 5.00 UNLIMITED
+  Duesseldorf_Karlsruhe ( Duesseldorf Karlsruhe ) 1 2.00 UNLIMITED
+  Duesseldorf_Ulm ( Duesseldorf Ulm ) 1 2.00 UNLIMITED
+  Duesseldorf_Freiburg ( Duesseldorf Freiburg ) 1 2.00 UNLIMITED
+  Duesseldorf_Muenchen ( Duesseldorf Muenchen ) 1 4.00 UNLIMITED
+  Duesseldorf_Augsburg ( Duesseldorf Augsburg ) 1 2.00 UNLIMITED
+  Duesseldorf_Nuernberg ( Duesseldorf Nuernberg ) 1 2.00 UNLIMITED
+  Duesseldorf_Wuerzburg ( Duesseldorf Wuerzburg ) 1 2.00 UNLIMITED
+  Duesseldorf_Regensburg ( Duesseldorf Regensburg ) 1 2.00 UNLIMITED
+  Koeln_Dortmund ( Koeln Dortmund ) 1 13.00 UNLIMITED
+  Koeln_Aachen ( Koeln Aachen ) 1 10.00 UNLIMITED
+  Koeln_Muenster ( Koeln Muenster ) 1 2.00 UNLIMITED
+  Koeln_Koblenz ( Koeln Koblenz ) 1 5.00 UNLIMITED
+  Koeln_Siegen ( Koeln Siegen ) 1 4.00 UNLIMITED
+  Koeln_Wesel ( Koeln Wesel ) 1 2.00 UNLIMITED
+  Koeln_Berlin ( Koeln Berlin ) 1 11.00 UNLIMITED
+  Koeln_Leipzig ( Koeln Leipzig ) 1 3.00 UNLIMITED
+  Koeln_Dresden ( Koeln Dresden ) 1 2.00 UNLIMITED
+  Koeln_Erfurt ( Koeln Erfurt ) 1 2.00 UNLIMITED
+  Koeln_Chemnitz ( Koeln Chemnitz ) 1 2.00 UNLIMITED
+  Koeln_Schwerin ( Koeln Schwerin ) 1 2.00 UNLIMITED
+  Koeln_Magdeburg ( Koeln Magdeburg ) 1 2.00 UNLIMITED
+  Koeln_Hamburg ( Koeln Hamburg ) 1 5.00 UNLIMITED
+  Koeln_Bremen ( Koeln Bremen ) 1 2.00 UNLIMITED
+  Koeln_Kiel ( Koeln Kiel ) 1 2.00 UNLIMITED
+  Koeln_Oldenburg ( Koeln Oldenburg ) 1 2.00 UNLIMITED
+  Koeln_Bremerhaven ( Koeln Bremerhaven ) 1 2.00 UNLIMITED
+  Koeln_Norden ( Koeln Norden ) 1 2.00 UNLIMITED
+  Koeln_Hannover ( Koeln Hannover ) 1 12.00 UNLIMITED
+  Koeln_Bielefeld ( Koeln Bielefeld ) 1 2.00 UNLIMITED
+  Koeln_Braunschweig ( Koeln Braunschweig ) 1 2.00 UNLIMITED
+  Koeln_Osnabrueck ( Koeln Osnabrueck ) 1 2.00 UNLIMITED
+  Koeln_Kassel ( Koeln Kassel ) 1 2.00 UNLIMITED
+  Koeln_Frankfurt ( Koeln Frankfurt ) 1 28.00 UNLIMITED
+  Koeln_Darmstadt ( Koeln Darmstadt ) 1 2.00 UNLIMITED
+  Koeln_Mannheim ( Koeln Mannheim ) 1 2.00 UNLIMITED
+  Koeln_Kaiserslautern ( Koeln Kaiserslautern ) 1 2.00 UNLIMITED
+  Koeln_Giessen ( Koeln Giessen ) 1 2.00 UNLIMITED
+  Koeln_Trier ( Koeln Trier ) 1 5.00 UNLIMITED
+  Koeln_Fulda ( Koeln Fulda ) 1 2.00 UNLIMITED
+  Koeln_Saarbruecken ( Koeln Saarbruecken ) 1 2.00 UNLIMITED
+  Koeln_Stuttgart ( Koeln Stuttgart ) 1 7.00 UNLIMITED
+  Koeln_Karlsruhe ( Koeln Karlsruhe ) 1 2.00 UNLIMITED
+  Koeln_Ulm ( Koeln Ulm ) 1 2.00 UNLIMITED
+  Koeln_Konstanz ( Koeln Konstanz ) 1 2.00 UNLIMITED
+  Koeln_Freiburg ( Koeln Freiburg ) 1 2.00 UNLIMITED
+  Koeln_Muenchen ( Koeln Muenchen ) 1 3.00 UNLIMITED
+  Koeln_Augsburg ( Koeln Augsburg ) 1 2.00 UNLIMITED
+  Koeln_Kempten ( Koeln Kempten ) 1 2.00 UNLIMITED
+  Koeln_Nuernberg ( Koeln Nuernberg ) 1 3.00 UNLIMITED
+  Koeln_Bayreuth ( Koeln Bayreuth ) 1 2.00 UNLIMITED
+  Koeln_Wuerzburg ( Koeln Wuerzburg ) 1 2.00 UNLIMITED
+  Koeln_Regensburg ( Koeln Regensburg ) 1 2.00 UNLIMITED
+  Dortmund_Aachen ( Dortmund Aachen ) 1 2.00 UNLIMITED
+  Dortmund_Muenster ( Dortmund Muenster ) 1 6.00 UNLIMITED
+  Dortmund_Koblenz ( Dortmund Koblenz ) 1 2.00 UNLIMITED
+  Dortmund_Siegen ( Dortmund Siegen ) 1 5.00 UNLIMITED
+  Dortmund_Wesel ( Dortmund Wesel ) 1 2.00 UNLIMITED
+  Dortmund_Berlin ( Dortmund Berlin ) 1 2.00 UNLIMITED
+  Dortmund_Leipzig ( Dortmund Leipzig ) 1 5.00 UNLIMITED
+  Dortmund_Dresden ( Dortmund Dresden ) 1 2.00 UNLIMITED
+  Dortmund_Erfurt ( Dortmund Erfurt ) 1 2.00 UNLIMITED
+  Dortmund_Chemnitz ( Dortmund Chemnitz ) 1 2.00 UNLIMITED
+  Dortmund_Schwerin ( Dortmund Schwerin ) 1 2.00 UNLIMITED
+  Dortmund_Magdeburg ( Dortmund Magdeburg ) 1 2.00 UNLIMITED
+  Dortmund_Greifswald ( Dortmund Greifswald ) 1 2.00 UNLIMITED
+  Dortmund_Hamburg ( Dortmund Hamburg ) 1 3.00 UNLIMITED
+  Dortmund_Bremen ( Dortmund Bremen ) 1 2.00 UNLIMITED
+  Dortmund_Kiel ( Dortmund Kiel ) 1 2.00 UNLIMITED
+  Dortmund_Oldenburg ( Dortmund Oldenburg ) 1 2.00 UNLIMITED
+  Dortmund_Flensburg ( Dortmund Flensburg ) 1 2.00 UNLIMITED
+  Dortmund_Bremerhaven ( Dortmund Bremerhaven ) 1 2.00 UNLIMITED
+  Dortmund_Norden ( Dortmund Norden ) 1 2.00 UNLIMITED
+  Dortmund_Hannover ( Dortmund Hannover ) 1 15.00 UNLIMITED
+  Dortmund_Bielefeld ( Dortmund Bielefeld ) 1 8.00 UNLIMITED
+  Dortmund_Braunschweig ( Dortmund Braunschweig ) 1 2.00 UNLIMITED
+  Dortmund_Osnabrueck ( Dortmund Osnabrueck ) 1 2.00 UNLIMITED
+  Dortmund_Kassel ( Dortmund Kassel ) 1 2.00 UNLIMITED
+  Dortmund_Frankfurt ( Dortmund Frankfurt ) 1 6.00 UNLIMITED
+  Dortmund_Darmstadt ( Dortmund Darmstadt ) 1 2.00 UNLIMITED
+  Dortmund_Mannheim ( Dortmund Mannheim ) 1 2.00 UNLIMITED
+  Dortmund_Giessen ( Dortmund Giessen ) 1 2.00 UNLIMITED
+  Dortmund_Fulda ( Dortmund Fulda ) 1 2.00 UNLIMITED
+  Dortmund_Saarbruecken ( Dortmund Saarbruecken ) 1 2.00 UNLIMITED
+  Dortmund_Stuttgart ( Dortmund Stuttgart ) 1 2.00 UNLIMITED
+  Dortmund_Karlsruhe ( Dortmund Karlsruhe ) 1 2.00 UNLIMITED
+  Dortmund_Ulm ( Dortmund Ulm ) 1 2.00 UNLIMITED
+  Dortmund_Freiburg ( Dortmund Freiburg ) 1 2.00 UNLIMITED
+  Dortmund_Muenchen ( Dortmund Muenchen ) 1 2.00 UNLIMITED
+  Dortmund_Augsburg ( Dortmund Augsburg ) 1 2.00 UNLIMITED
+  Dortmund_Nuernberg ( Dortmund Nuernberg ) 1 2.00 UNLIMITED
+  Dortmund_Wuerzburg ( Dortmund Wuerzburg ) 1 2.00 UNLIMITED
+  Aachen_Muenster ( Aachen Muenster ) 1 2.00 UNLIMITED
+  Aachen_Koblenz ( Aachen Koblenz ) 1 2.00 UNLIMITED
+  Aachen_Wesel ( Aachen Wesel ) 1 2.00 UNLIMITED
+  Aachen_Berlin ( Aachen Berlin ) 1 2.00 UNLIMITED
+  Aachen_Dresden ( Aachen Dresden ) 1 2.00 UNLIMITED
+  Aachen_Erfurt ( Aachen Erfurt ) 1 2.00 UNLIMITED
+  Aachen_Hamburg ( Aachen Hamburg ) 1 2.00 UNLIMITED
+  Aachen_Bremerhaven ( Aachen Bremerhaven ) 1 2.00 UNLIMITED
+  Aachen_Norden ( Aachen Norden ) 1 2.00 UNLIMITED
+  Aachen_Osnabrueck ( Aachen Osnabrueck ) 1 2.00 UNLIMITED
+  Aachen_Frankfurt ( Aachen Frankfurt ) 1 3.00 UNLIMITED
+  Aachen_Kaiserslautern ( Aachen Kaiserslautern ) 1 2.00 UNLIMITED
+  Aachen_Trier ( Aachen Trier ) 1 2.00 UNLIMITED
+  Aachen_Fulda ( Aachen Fulda ) 1 2.00 UNLIMITED
+  Aachen_Saarbruecken ( Aachen Saarbruecken ) 1 2.00 UNLIMITED
+  Aachen_Konstanz ( Aachen Konstanz ) 1 2.00 UNLIMITED
+  Aachen_Freiburg ( Aachen Freiburg ) 1 3.00 UNLIMITED
+  Aachen_Nuernberg ( Aachen Nuernberg ) 1 2.00 UNLIMITED
+  Muenster_Siegen ( Muenster Siegen ) 1 2.00 UNLIMITED
+  Muenster_Wesel ( Muenster Wesel ) 1 2.00 UNLIMITED
+  Muenster_Berlin ( Muenster Berlin ) 1 2.00 UNLIMITED
+  Muenster_Schwerin ( Muenster Schwerin ) 1 2.00 UNLIMITED
+  Muenster_Hamburg ( Muenster Hamburg ) 1 2.00 UNLIMITED
+  Muenster_Bremen ( Muenster Bremen ) 1 2.00 UNLIMITED
+  Muenster_Bremerhaven ( Muenster Bremerhaven ) 1 2.00 UNLIMITED
+  Muenster_Norden ( Muenster Norden ) 1 2.00 UNLIMITED
+  Muenster_Hannover ( Muenster Hannover ) 1 2.00 UNLIMITED
+  Muenster_Bielefeld ( Muenster Bielefeld ) 1 5.00 UNLIMITED
+  Muenster_Osnabrueck ( Muenster Osnabrueck ) 1 2.00 UNLIMITED
+  Muenster_Kassel ( Muenster Kassel ) 1 3.00 UNLIMITED
+  Muenster_Frankfurt ( Muenster Frankfurt ) 1 3.00 UNLIMITED
+  Muenster_Fulda ( Muenster Fulda ) 1 2.00 UNLIMITED
+  Muenster_Konstanz ( Muenster Konstanz ) 1 2.00 UNLIMITED
+  Muenster_Nuernberg ( Muenster Nuernberg ) 1 2.00 UNLIMITED
+  Koblenz_Siegen ( Koblenz Siegen ) 1 2.00 UNLIMITED
+  Koblenz_Berlin ( Koblenz Berlin ) 1 2.00 UNLIMITED
+  Koblenz_Dresden ( Koblenz Dresden ) 1 2.00 UNLIMITED
+  Koblenz_Hamburg ( Koblenz Hamburg ) 1 2.00 UNLIMITED
+  Koblenz_Bremerhaven ( Koblenz Bremerhaven ) 1 2.00 UNLIMITED
+  Koblenz_Norden ( Koblenz Norden ) 1 2.00 UNLIMITED
+  Koblenz_Bielefeld ( Koblenz Bielefeld ) 1 2.00 UNLIMITED
+  Koblenz_Osnabrueck ( Koblenz Osnabrueck ) 1 2.00 UNLIMITED
+  Koblenz_Kassel ( Koblenz Kassel ) 1 2.00 UNLIMITED
+  Koblenz_Frankfurt ( Koblenz Frankfurt ) 1 2.00 UNLIMITED
+  Koblenz_Darmstadt ( Koblenz Darmstadt ) 1 6.00 UNLIMITED
+  Koblenz_Mannheim ( Koblenz Mannheim ) 1 2.00 UNLIMITED
+  Koblenz_Kaiserslautern ( Koblenz Kaiserslautern ) 1 2.00 UNLIMITED
+  Koblenz_Giessen ( Koblenz Giessen ) 1 2.00 UNLIMITED
+  Koblenz_Trier ( Koblenz Trier ) 1 2.00 UNLIMITED
+  Koblenz_Fulda ( Koblenz Fulda ) 1 2.00 UNLIMITED
+  Koblenz_Saarbruecken ( Koblenz Saarbruecken ) 1 2.00 UNLIMITED
+  Koblenz_Konstanz ( Koblenz Konstanz ) 1 2.00 UNLIMITED
+  Koblenz_Wuerzburg ( Koblenz Wuerzburg ) 1 2.00 UNLIMITED
+  Siegen_Berlin ( Siegen Berlin ) 1 2.00 UNLIMITED
+  Siegen_Hamburg ( Siegen Hamburg ) 1 2.00 UNLIMITED
+  Siegen_Bremerhaven ( Siegen Bremerhaven ) 1 2.00 UNLIMITED
+  Siegen_Osnabrueck ( Siegen Osnabrueck ) 1 2.00 UNLIMITED
+  Siegen_Frankfurt ( Siegen Frankfurt ) 1 2.00 UNLIMITED
+  Siegen_Mannheim ( Siegen Mannheim ) 1 2.00 UNLIMITED
+  Siegen_Giessen ( Siegen Giessen ) 1 2.00 UNLIMITED
+  Siegen_Fulda ( Siegen Fulda ) 1 2.00 UNLIMITED
+  Siegen_Saarbruecken ( Siegen Saarbruecken ) 1 2.00 UNLIMITED
+  Siegen_Konstanz ( Siegen Konstanz ) 1 2.00 UNLIMITED
+  Siegen_Nuernberg ( Siegen Nuernberg ) 1 2.00 UNLIMITED
+  Wesel_Berlin ( Wesel Berlin ) 1 2.00 UNLIMITED
+  Wesel_Hamburg ( Wesel Hamburg ) 1 2.00 UNLIMITED
+  Wesel_Bremerhaven ( Wesel Bremerhaven ) 1 2.00 UNLIMITED
+  Wesel_Norden ( Wesel Norden ) 1 2.00 UNLIMITED
+  Wesel_Bielefeld ( Wesel Bielefeld ) 1 2.00 UNLIMITED
+  Wesel_Osnabrueck ( Wesel Osnabrueck ) 1 2.00 UNLIMITED
+  Wesel_Frankfurt ( Wesel Frankfurt ) 1 2.00 UNLIMITED
+  Wesel_Fulda ( Wesel Fulda ) 1 2.00 UNLIMITED
+  Wesel_Saarbruecken ( Wesel Saarbruecken ) 1 2.00 UNLIMITED
+  Wesel_Konstanz ( Wesel Konstanz ) 1 2.00 UNLIMITED
+  Berlin_Leipzig ( Berlin Leipzig ) 1 20.00 UNLIMITED
+  Berlin_Dresden ( Berlin Dresden ) 1 11.00 UNLIMITED
+  Berlin_Erfurt ( Berlin Erfurt ) 1 3.00 UNLIMITED
+  Berlin_Chemnitz ( Berlin Chemnitz ) 1 2.00 UNLIMITED
+  Berlin_Schwerin ( Berlin Schwerin ) 1 3.00 UNLIMITED
+  Berlin_Magdeburg ( Berlin Magdeburg ) 1 7.00 UNLIMITED
+  Berlin_Greifswald ( Berlin Greifswald ) 1 4.00 UNLIMITED
+  Berlin_Hamburg ( Berlin Hamburg ) 1 23.00 UNLIMITED
+  Berlin_Bremen ( Berlin Bremen ) 1 2.00 UNLIMITED
+  Berlin_Kiel ( Berlin Kiel ) 1 2.00 UNLIMITED
+  Berlin_Oldenburg ( Berlin Oldenburg ) 1 2.00 UNLIMITED
+  Berlin_Bremerhaven ( Berlin Bremerhaven ) 1 2.00 UNLIMITED
+  Berlin_Hannover ( Berlin Hannover ) 1 25.00 UNLIMITED
+  Berlin_Bielefeld ( Berlin Bielefeld ) 1 2.00 UNLIMITED
+  Berlin_Braunschweig ( Berlin Braunschweig ) 1 2.00 UNLIMITED
+  Berlin_Osnabrueck ( Berlin Osnabrueck ) 1 2.00 UNLIMITED
+  Berlin_Kassel ( Berlin Kassel ) 1 2.00 UNLIMITED
+  Berlin_Frankfurt ( Berlin Frankfurt ) 1 16.00 UNLIMITED
+  Berlin_Darmstadt ( Berlin Darmstadt ) 1 2.00 UNLIMITED
+  Berlin_Mannheim ( Berlin Mannheim ) 1 2.00 UNLIMITED
+  Berlin_Kaiserslautern ( Berlin Kaiserslautern ) 1 2.00 UNLIMITED
+  Berlin_Giessen ( Berlin Giessen ) 1 2.00 UNLIMITED
+  Berlin_Trier ( Berlin Trier ) 1 2.00 UNLIMITED
+  Berlin_Fulda ( Berlin Fulda ) 1 2.00 UNLIMITED
+  Berlin_Saarbruecken ( Berlin Saarbruecken ) 1 2.00 UNLIMITED
+  Berlin_Stuttgart ( Berlin Stuttgart ) 1 3.00 UNLIMITED
+  Berlin_Karlsruhe ( Berlin Karlsruhe ) 1 2.00 UNLIMITED
+  Berlin_Ulm ( Berlin Ulm ) 1 2.00 UNLIMITED
+  Berlin_Konstanz ( Berlin Konstanz ) 1 2.00 UNLIMITED
+  Berlin_Freiburg ( Berlin Freiburg ) 1 2.00 UNLIMITED
+  Berlin_Muenchen ( Berlin Muenchen ) 1 4.00 UNLIMITED
+  Berlin_Augsburg ( Berlin Augsburg ) 1 2.00 UNLIMITED
+  Berlin_Passau ( Berlin Passau ) 1 2.00 UNLIMITED
+  Berlin_Nuernberg ( Berlin Nuernberg ) 1 3.00 UNLIMITED
+  Berlin_Bayreuth ( Berlin Bayreuth ) 1 2.00 UNLIMITED
+  Berlin_Wuerzburg ( Berlin Wuerzburg ) 1 2.00 UNLIMITED
+  Leipzig_Dresden ( Leipzig Dresden ) 1 10.00 UNLIMITED
+  Leipzig_Erfurt ( Leipzig Erfurt ) 1 11.00 UNLIMITED
+  Leipzig_Chemnitz ( Leipzig Chemnitz ) 1 3.00 UNLIMITED
+  Leipzig_Schwerin ( Leipzig Schwerin ) 1 2.00 UNLIMITED
+  Leipzig_Magdeburg ( Leipzig Magdeburg ) 1 6.00 UNLIMITED
+  Leipzig_Greifswald ( Leipzig Greifswald ) 1 2.00 UNLIMITED
+  Leipzig_Hamburg ( Leipzig Hamburg ) 1 17.00 UNLIMITED
+  Leipzig_Hannover ( Leipzig Hannover ) 1 3.00 UNLIMITED
+  Leipzig_Bielefeld ( Leipzig Bielefeld ) 1 2.00 UNLIMITED
+  Leipzig_Braunschweig ( Leipzig Braunschweig ) 1 2.00 UNLIMITED
+  Leipzig_Frankfurt ( Leipzig Frankfurt ) 1 4.00 UNLIMITED
+  Leipzig_Darmstadt ( Leipzig Darmstadt ) 1 2.00 UNLIMITED
+  Leipzig_Mannheim ( Leipzig Mannheim ) 1 2.00 UNLIMITED
+  Leipzig_Stuttgart ( Leipzig Stuttgart ) 1 2.00 UNLIMITED
+  Leipzig_Karlsruhe ( Leipzig Karlsruhe ) 1 2.00 UNLIMITED
+  Leipzig_Ulm ( Leipzig Ulm ) 1 2.00 UNLIMITED
+  Leipzig_Muenchen ( Leipzig Muenchen ) 1 3.00 UNLIMITED
+  Leipzig_Augsburg ( Leipzig Augsburg ) 1 2.00 UNLIMITED
+  Leipzig_Nuernberg ( Leipzig Nuernberg ) 1 9.00 UNLIMITED
+  Leipzig_Wuerzburg ( Leipzig Wuerzburg ) 1 2.00 UNLIMITED
+  Dresden_Erfurt ( Dresden Erfurt ) 1 2.00 UNLIMITED
+  Dresden_Chemnitz ( Dresden Chemnitz ) 1 4.00 UNLIMITED
+  Dresden_Schwerin ( Dresden Schwerin ) 1 2.00 UNLIMITED
+  Dresden_Magdeburg ( Dresden Magdeburg ) 1 2.00 UNLIMITED
+  Dresden_Greifswald ( Dresden Greifswald ) 1 2.00 UNLIMITED
+  Dresden_Hamburg ( Dresden Hamburg ) 1 2.00 UNLIMITED
+  Dresden_Bremen ( Dresden Bremen ) 1 2.00 UNLIMITED
+  Dresden_Kiel ( Dresden Kiel ) 1 2.00 UNLIMITED
+  Dresden_Norden ( Dresden Norden ) 1 2.00 UNLIMITED
+  Dresden_Hannover ( Dresden Hannover ) 1 2.00 UNLIMITED
+  Dresden_Bielefeld ( Dresden Bielefeld ) 1 2.00 UNLIMITED
+  Dresden_Braunschweig ( Dresden Braunschweig ) 1 2.00 UNLIMITED
+  Dresden_Kassel ( Dresden Kassel ) 1 2.00 UNLIMITED
+  Dresden_Frankfurt ( Dresden Frankfurt ) 1 2.00 UNLIMITED
+  Dresden_Darmstadt ( Dresden Darmstadt ) 1 2.00 UNLIMITED
+  Dresden_Mannheim ( Dresden Mannheim ) 1 2.00 UNLIMITED
+  Dresden_Trier ( Dresden Trier ) 1 2.00 UNLIMITED
+  Dresden_Stuttgart ( Dresden Stuttgart ) 1 2.00 UNLIMITED
+  Dresden_Karlsruhe ( Dresden Karlsruhe ) 1 2.00 UNLIMITED
+  Dresden_Ulm ( Dresden Ulm ) 1 2.00 UNLIMITED
+  Dresden_Konstanz ( Dresden Konstanz ) 1 2.00 UNLIMITED
+  Dresden_Freiburg ( Dresden Freiburg ) 1 2.00 UNLIMITED
+  Dresden_Muenchen ( Dresden Muenchen ) 1 2.00 UNLIMITED
+  Dresden_Augsburg ( Dresden Augsburg ) 1 2.00 UNLIMITED
+  Dresden_Nuernberg ( Dresden Nuernberg ) 1 2.00 UNLIMITED
+  Dresden_Bayreuth ( Dresden Bayreuth ) 1 2.00 UNLIMITED
+  Dresden_Wuerzburg ( Dresden Wuerzburg ) 1 2.00 UNLIMITED
+  Dresden_Regensburg ( Dresden Regensburg ) 1 2.00 UNLIMITED
+  Erfurt_Chemnitz ( Erfurt Chemnitz ) 1 2.00 UNLIMITED
+  Erfurt_Schwerin ( Erfurt Schwerin ) 1 2.00 UNLIMITED
+  Erfurt_Magdeburg ( Erfurt Magdeburg ) 1 6.00 UNLIMITED
+  Erfurt_Hamburg ( Erfurt Hamburg ) 1 2.00 UNLIMITED
+  Erfurt_Bremen ( Erfurt Bremen ) 1 2.00 UNLIMITED
+  Erfurt_Kiel ( Erfurt Kiel ) 1 2.00 UNLIMITED
+  Erfurt_Hannover ( Erfurt Hannover ) 1 2.00 UNLIMITED
+  Erfurt_Bielefeld ( Erfurt Bielefeld ) 1 2.00 UNLIMITED
+  Erfurt_Braunschweig ( Erfurt Braunschweig ) 1 2.00 UNLIMITED
+  Erfurt_Kassel ( Erfurt Kassel ) 1 2.00 UNLIMITED
+  Erfurt_Frankfurt ( Erfurt Frankfurt ) 1 5.00 UNLIMITED
+  Erfurt_Darmstadt ( Erfurt Darmstadt ) 1 2.00 UNLIMITED
+  Erfurt_Mannheim ( Erfurt Mannheim ) 1 2.00 UNLIMITED
+  Erfurt_Giessen ( Erfurt Giessen ) 1 2.00 UNLIMITED
+  Erfurt_Fulda ( Erfurt Fulda ) 1 2.00 UNLIMITED
+  Erfurt_Stuttgart ( Erfurt Stuttgart ) 1 2.00 UNLIMITED
+  Erfurt_Karlsruhe ( Erfurt Karlsruhe ) 1 2.00 UNLIMITED
+  Erfurt_Muenchen ( Erfurt Muenchen ) 1 2.00 UNLIMITED
+  Erfurt_Augsburg ( Erfurt Augsburg ) 1 2.00 UNLIMITED
+  Erfurt_Nuernberg ( Erfurt Nuernberg ) 1 2.00 UNLIMITED
+  Erfurt_Bayreuth ( Erfurt Bayreuth ) 1 2.00 UNLIMITED
+  Erfurt_Wuerzburg ( Erfurt Wuerzburg ) 1 2.00 UNLIMITED
+  Chemnitz_Schwerin ( Chemnitz Schwerin ) 1 2.00 UNLIMITED
+  Chemnitz_Magdeburg ( Chemnitz Magdeburg ) 1 2.00 UNLIMITED
+  Chemnitz_Hamburg ( Chemnitz Hamburg ) 1 2.00 UNLIMITED
+  Chemnitz_Hannover ( Chemnitz Hannover ) 1 2.00 UNLIMITED
+  Chemnitz_Bielefeld ( Chemnitz Bielefeld ) 1 2.00 UNLIMITED
+  Chemnitz_Braunschweig ( Chemnitz Braunschweig ) 1 2.00 UNLIMITED
+  Chemnitz_Frankfurt ( Chemnitz Frankfurt ) 1 2.00 UNLIMITED
+  Chemnitz_Mannheim ( Chemnitz Mannheim ) 1 2.00 UNLIMITED
+  Chemnitz_Giessen ( Chemnitz Giessen ) 1 2.00 UNLIMITED
+  Chemnitz_Stuttgart ( Chemnitz Stuttgart ) 1 2.00 UNLIMITED
+  Chemnitz_Karlsruhe ( Chemnitz Karlsruhe ) 1 2.00 UNLIMITED
+  Chemnitz_Muenchen ( Chemnitz Muenchen ) 1 2.00 UNLIMITED
+  Chemnitz_Augsburg ( Chemnitz Augsburg ) 1 2.00 UNLIMITED
+  Chemnitz_Nuernberg ( Chemnitz Nuernberg ) 1 2.00 UNLIMITED
+  Chemnitz_Bayreuth ( Chemnitz Bayreuth ) 1 2.00 UNLIMITED
+  Chemnitz_Wuerzburg ( Chemnitz Wuerzburg ) 1 2.00 UNLIMITED
+  Schwerin_Magdeburg ( Schwerin Magdeburg ) 1 2.00 UNLIMITED
+  Schwerin_Greifswald ( Schwerin Greifswald ) 1 2.00 UNLIMITED
+  Schwerin_Hamburg ( Schwerin Hamburg ) 1 8.00 UNLIMITED
+  Schwerin_Bremen ( Schwerin Bremen ) 1 2.00 UNLIMITED
+  Schwerin_Kiel ( Schwerin Kiel ) 1 3.00 UNLIMITED
+  Schwerin_Hannover ( Schwerin Hannover ) 1 2.00 UNLIMITED
+  Schwerin_Bielefeld ( Schwerin Bielefeld ) 1 2.00 UNLIMITED
+  Schwerin_Frankfurt ( Schwerin Frankfurt ) 1 2.00 UNLIMITED
+  Schwerin_Mannheim ( Schwerin Mannheim ) 1 2.00 UNLIMITED
+  Schwerin_Stuttgart ( Schwerin Stuttgart ) 1 2.00 UNLIMITED
+  Schwerin_Karlsruhe ( Schwerin Karlsruhe ) 1 2.00 UNLIMITED
+  Schwerin_Muenchen ( Schwerin Muenchen ) 1 2.00 UNLIMITED
+  Schwerin_Augsburg ( Schwerin Augsburg ) 1 2.00 UNLIMITED
+  Schwerin_Nuernberg ( Schwerin Nuernberg ) 1 2.00 UNLIMITED
+  Schwerin_Wuerzburg ( Schwerin Wuerzburg ) 1 2.00 UNLIMITED
+  Magdeburg_Greifswald ( Magdeburg Greifswald ) 1 2.00 UNLIMITED
+  Magdeburg_Hamburg ( Magdeburg Hamburg ) 1 2.00 UNLIMITED
+  Magdeburg_Bremen ( Magdeburg Bremen ) 1 2.00 UNLIMITED
+  Magdeburg_Kiel ( Magdeburg Kiel ) 1 2.00 UNLIMITED
+  Magdeburg_Hannover ( Magdeburg Hannover ) 1 2.00 UNLIMITED
+  Magdeburg_Bielefeld ( Magdeburg Bielefeld ) 1 2.00 UNLIMITED
+  Magdeburg_Braunschweig ( Magdeburg Braunschweig ) 1 3.00 UNLIMITED
+  Magdeburg_Frankfurt ( Magdeburg Frankfurt ) 1 2.00 UNLIMITED
+  Magdeburg_Mannheim ( Magdeburg Mannheim ) 1 2.00 UNLIMITED
+  Magdeburg_Stuttgart ( Magdeburg Stuttgart ) 1 2.00 UNLIMITED
+  Magdeburg_Karlsruhe ( Magdeburg Karlsruhe ) 1 2.00 UNLIMITED
+  Magdeburg_Muenchen ( Magdeburg Muenchen ) 1 2.00 UNLIMITED
+  Magdeburg_Augsburg ( Magdeburg Augsburg ) 1 2.00 UNLIMITED
+  Magdeburg_Nuernberg ( Magdeburg Nuernberg ) 1 2.00 UNLIMITED
+  Magdeburg_Bayreuth ( Magdeburg Bayreuth ) 1 2.00 UNLIMITED
+  Magdeburg_Wuerzburg ( Magdeburg Wuerzburg ) 1 2.00 UNLIMITED
+  Greifswald_Hamburg ( Greifswald Hamburg ) 1 2.00 UNLIMITED
+  Greifswald_Bremen ( Greifswald Bremen ) 1 2.00 UNLIMITED
+  Greifswald_Kiel ( Greifswald Kiel ) 1 2.00 UNLIMITED
+  Greifswald_Hannover ( Greifswald Hannover ) 1 2.00 UNLIMITED
+  Greifswald_Bielefeld ( Greifswald Bielefeld ) 1 2.00 UNLIMITED
+  Greifswald_Frankfurt ( Greifswald Frankfurt ) 1 2.00 UNLIMITED
+  Greifswald_Karlsruhe ( Greifswald Karlsruhe ) 1 2.00 UNLIMITED
+  Hamburg_Bremen ( Hamburg Bremen ) 1 13.00 UNLIMITED
+  Hamburg_Kiel ( Hamburg Kiel ) 1 14.00 UNLIMITED
+  Hamburg_Oldenburg ( Hamburg Oldenburg ) 1 2.00 UNLIMITED
+  Hamburg_Flensburg ( Hamburg Flensburg ) 1 3.00 UNLIMITED
+  Hamburg_Bremerhaven ( Hamburg Bremerhaven ) 1 3.00 UNLIMITED
+  Hamburg_Norden ( Hamburg Norden ) 1 2.00 UNLIMITED
+  Hamburg_Hannover ( Hamburg Hannover ) 1 71.00 UNLIMITED
+  Hamburg_Bielefeld ( Hamburg Bielefeld ) 1 3.00 UNLIMITED
+  Hamburg_Braunschweig ( Hamburg Braunschweig ) 1 2.00 UNLIMITED
+  Hamburg_Osnabrueck ( Hamburg Osnabrueck ) 1 2.00 UNLIMITED
+  Hamburg_Kassel ( Hamburg Kassel ) 1 2.00 UNLIMITED
+  Hamburg_Frankfurt ( Hamburg Frankfurt ) 1 11.00 UNLIMITED
+  Hamburg_Darmstadt ( Hamburg Darmstadt ) 1 2.00 UNLIMITED
+  Hamburg_Mannheim ( Hamburg Mannheim ) 1 2.00 UNLIMITED
+  Hamburg_Giessen ( Hamburg Giessen ) 1 2.00 UNLIMITED
+  Hamburg_Fulda ( Hamburg Fulda ) 1 2.00 UNLIMITED
+  Hamburg_Saarbruecken ( Hamburg Saarbruecken ) 1 2.00 UNLIMITED
+  Hamburg_Stuttgart ( Hamburg Stuttgart ) 1 3.00 UNLIMITED
+  Hamburg_Karlsruhe ( Hamburg Karlsruhe ) 1 2.00 UNLIMITED
+  Hamburg_Ulm ( Hamburg Ulm ) 1 2.00 UNLIMITED
+  Hamburg_Freiburg ( Hamburg Freiburg ) 1 2.00 UNLIMITED
+  Hamburg_Muenchen ( Hamburg Muenchen ) 1 6.00 UNLIMITED
+  Hamburg_Augsburg ( Hamburg Augsburg ) 1 2.00 UNLIMITED
+  Hamburg_Nuernberg ( Hamburg Nuernberg ) 1 2.00 UNLIMITED
+  Hamburg_Wuerzburg ( Hamburg Wuerzburg ) 1 2.00 UNLIMITED
+  Hamburg_Regensburg ( Hamburg Regensburg ) 1 2.00 UNLIMITED
+  Bremen_Kiel ( Bremen Kiel ) 1 2.00 UNLIMITED
+  Bremen_Oldenburg ( Bremen Oldenburg ) 1 4.00 UNLIMITED
+  Bremen_Flensburg ( Bremen Flensburg ) 1 2.00 UNLIMITED
+  Bremen_Bremerhaven ( Bremen Bremerhaven ) 1 2.00 UNLIMITED
+  Bremen_Norden ( Bremen Norden ) 1 3.00 UNLIMITED
+  Bremen_Hannover ( Bremen Hannover ) 1 11.00 UNLIMITED
+  Bremen_Bielefeld ( Bremen Bielefeld ) 1 2.00 UNLIMITED
+  Bremen_Braunschweig ( Bremen Braunschweig ) 1 2.00 UNLIMITED
+  Bremen_Osnabrueck ( Bremen Osnabrueck ) 1 2.00 UNLIMITED
+  Bremen_Kassel ( Bremen Kassel ) 1 2.00 UNLIMITED
+  Bremen_Frankfurt ( Bremen Frankfurt ) 1 2.00 UNLIMITED
+  Bremen_Darmstadt ( Bremen Darmstadt ) 1 2.00 UNLIMITED
+  Bremen_Mannheim ( Bremen Mannheim ) 1 2.00 UNLIMITED
+  Bremen_Giessen ( Bremen Giessen ) 1 2.00 UNLIMITED
+  Bremen_Trier ( Bremen Trier ) 1 2.00 UNLIMITED
+  Bremen_Stuttgart ( Bremen Stuttgart ) 1 2.00 UNLIMITED
+  Bremen_Karlsruhe ( Bremen Karlsruhe ) 1 2.00 UNLIMITED
+  Bremen_Muenchen ( Bremen Muenchen ) 1 2.00 UNLIMITED
+  Bremen_Augsburg ( Bremen Augsburg ) 1 2.00 UNLIMITED
+  Bremen_Nuernberg ( Bremen Nuernberg ) 1 2.00 UNLIMITED
+  Bremen_Wuerzburg ( Bremen Wuerzburg ) 1 2.00 UNLIMITED
+  Kiel_Oldenburg ( Kiel Oldenburg ) 1 2.00 UNLIMITED
+  Kiel_Flensburg ( Kiel Flensburg ) 1 3.00 UNLIMITED
+  Kiel_Bremerhaven ( Kiel Bremerhaven ) 1 2.00 UNLIMITED
+  Kiel_Hannover ( Kiel Hannover ) 1 2.00 UNLIMITED
+  Kiel_Bielefeld ( Kiel Bielefeld ) 1 2.00 UNLIMITED
+  Kiel_Braunschweig ( Kiel Braunschweig ) 1 2.00 UNLIMITED
+  Kiel_Kassel ( Kiel Kassel ) 1 2.00 UNLIMITED
+  Kiel_Frankfurt ( Kiel Frankfurt ) 1 2.00 UNLIMITED
+  Kiel_Darmstadt ( Kiel Darmstadt ) 1 2.00 UNLIMITED
+  Kiel_Mannheim ( Kiel Mannheim ) 1 2.00 UNLIMITED
+  Kiel_Stuttgart ( Kiel Stuttgart ) 1 2.00 UNLIMITED
+  Kiel_Karlsruhe ( Kiel Karlsruhe ) 1 2.00 UNLIMITED
+  Kiel_Muenchen ( Kiel Muenchen ) 1 2.00 UNLIMITED
+  Kiel_Augsburg ( Kiel Augsburg ) 1 2.00 UNLIMITED
+  Kiel_Nuernberg ( Kiel Nuernberg ) 1 2.00 UNLIMITED
+  Kiel_Bayreuth ( Kiel Bayreuth ) 1 2.00 UNLIMITED
+  Kiel_Wuerzburg ( Kiel Wuerzburg ) 1 2.00 UNLIMITED
+  Oldenburg_Bremerhaven ( Oldenburg Bremerhaven ) 1 2.00 UNLIMITED
+  Oldenburg_Norden ( Oldenburg Norden ) 1 2.00 UNLIMITED
+  Oldenburg_Hannover ( Oldenburg Hannover ) 1 2.00 UNLIMITED
+  Oldenburg_Bielefeld ( Oldenburg Bielefeld ) 1 2.00 UNLIMITED
+  Oldenburg_Osnabrueck ( Oldenburg Osnabrueck ) 1 2.00 UNLIMITED
+  Oldenburg_Frankfurt ( Oldenburg Frankfurt ) 1 2.00 UNLIMITED
+  Oldenburg_Stuttgart ( Oldenburg Stuttgart ) 1 2.00 UNLIMITED
+  Oldenburg_Muenchen ( Oldenburg Muenchen ) 1 2.00 UNLIMITED
+  Flensburg_Bremerhaven ( Flensburg Bremerhaven ) 1 2.00 UNLIMITED
+  Flensburg_Hannover ( Flensburg Hannover ) 1 2.00 UNLIMITED
+  Flensburg_Bielefeld ( Flensburg Bielefeld ) 1 2.00 UNLIMITED
+  Flensburg_Frankfurt ( Flensburg Frankfurt ) 1 5.00 UNLIMITED
+  Bremerhaven_Hannover ( Bremerhaven Hannover ) 1 2.00 UNLIMITED
+  Bremerhaven_Bielefeld ( Bremerhaven Bielefeld ) 1 2.00 UNLIMITED
+  Bremerhaven_Frankfurt ( Bremerhaven Frankfurt ) 1 2.00 UNLIMITED
+  Norden_Hannover ( Norden Hannover ) 1 2.00 UNLIMITED
+  Norden_Bielefeld ( Norden Bielefeld ) 1 2.00 UNLIMITED
+  Norden_Osnabrueck ( Norden Osnabrueck ) 1 2.00 UNLIMITED
+  Norden_Frankfurt ( Norden Frankfurt ) 1 2.00 UNLIMITED
+  Norden_Saarbruecken ( Norden Saarbruecken ) 1 2.00 UNLIMITED
+  Norden_Konstanz ( Norden Konstanz ) 1 2.00 UNLIMITED
+  Norden_Muenchen ( Norden Muenchen ) 1 2.00 UNLIMITED
+  Norden_Passau ( Norden Passau ) 1 2.00 UNLIMITED
+  Hannover_Bielefeld ( Hannover Bielefeld ) 1 25.00 UNLIMITED
+  Hannover_Braunschweig ( Hannover Braunschweig ) 1 5.00 UNLIMITED
+  Hannover_Osnabrueck ( Hannover Osnabrueck ) 1 3.00 UNLIMITED
+  Hannover_Kassel ( Hannover Kassel ) 1 6.00 UNLIMITED
+  Hannover_Frankfurt ( Hannover Frankfurt ) 1 49.00 UNLIMITED
+  Hannover_Darmstadt ( Hannover Darmstadt ) 1 2.00 UNLIMITED
+  Hannover_Mannheim ( Hannover Mannheim ) 1 2.00 UNLIMITED
+  Hannover_Giessen ( Hannover Giessen ) 1 2.00 UNLIMITED
+  Hannover_Trier ( Hannover Trier ) 1 2.00 UNLIMITED
+  Hannover_Fulda ( Hannover Fulda ) 1 2.00 UNLIMITED
+  Hannover_Saarbruecken ( Hannover Saarbruecken ) 1 2.00 UNLIMITED
+  Hannover_Stuttgart ( Hannover Stuttgart ) 1 2.00 UNLIMITED
+  Hannover_Karlsruhe ( Hannover Karlsruhe ) 1 2.00 UNLIMITED
+  Hannover_Ulm ( Hannover Ulm ) 1 2.00 UNLIMITED
+  Hannover_Konstanz ( Hannover Konstanz ) 1 2.00 UNLIMITED
+  Hannover_Freiburg ( Hannover Freiburg ) 1 2.00 UNLIMITED
+  Hannover_Muenchen ( Hannover Muenchen ) 1 2.00 UNLIMITED
+  Hannover_Augsburg ( Hannover Augsburg ) 1 2.00 UNLIMITED
+  Hannover_Nuernberg ( Hannover Nuernberg ) 1 4.00 UNLIMITED
+  Hannover_Wuerzburg ( Hannover Wuerzburg ) 1 2.00 UNLIMITED
+  Bielefeld_Braunschweig ( Bielefeld Braunschweig ) 1 2.00 UNLIMITED
+  Bielefeld_Osnabrueck ( Bielefeld Osnabrueck ) 1 4.00 UNLIMITED
+  Bielefeld_Kassel ( Bielefeld Kassel ) 1 3.00 UNLIMITED
+  Bielefeld_Frankfurt ( Bielefeld Frankfurt ) 1 3.00 UNLIMITED
+  Bielefeld_Darmstadt ( Bielefeld Darmstadt ) 1 2.00 UNLIMITED
+  Bielefeld_Mannheim ( Bielefeld Mannheim ) 1 2.00 UNLIMITED
+  Bielefeld_Giessen ( Bielefeld Giessen ) 1 2.00 UNLIMITED
+  Bielefeld_Fulda ( Bielefeld Fulda ) 1 2.00 UNLIMITED
+  Bielefeld_Saarbruecken ( Bielefeld Saarbruecken ) 1 2.00 UNLIMITED
+  Bielefeld_Stuttgart ( Bielefeld Stuttgart ) 1 2.00 UNLIMITED
+  Bielefeld_Karlsruhe ( Bielefeld Karlsruhe ) 1 2.00 UNLIMITED
+  Bielefeld_Ulm ( Bielefeld Ulm ) 1 2.00 UNLIMITED
+  Bielefeld_Muenchen ( Bielefeld Muenchen ) 1 2.00 UNLIMITED
+  Bielefeld_Augsburg ( Bielefeld Augsburg ) 1 2.00 UNLIMITED
+  Bielefeld_Nuernberg ( Bielefeld Nuernberg ) 1 2.00 UNLIMITED
+  Bielefeld_Bayreuth ( Bielefeld Bayreuth ) 1 2.00 UNLIMITED
+  Bielefeld_Wuerzburg ( Bielefeld Wuerzburg ) 1 2.00 UNLIMITED
+  Braunschweig_Kassel ( Braunschweig Kassel ) 1 2.00 UNLIMITED
+  Braunschweig_Frankfurt ( Braunschweig Frankfurt ) 1 2.00 UNLIMITED
+  Braunschweig_Stuttgart ( Braunschweig Stuttgart ) 1 2.00 UNLIMITED
+  Braunschweig_Karlsruhe ( Braunschweig Karlsruhe ) 1 2.00 UNLIMITED
+  Braunschweig_Muenchen ( Braunschweig Muenchen ) 1 2.00 UNLIMITED
+  Osnabrueck_Frankfurt ( Osnabrueck Frankfurt ) 1 2.00 UNLIMITED
+  Osnabrueck_Stuttgart ( Osnabrueck Stuttgart ) 1 2.00 UNLIMITED
+  Osnabrueck_Muenchen ( Osnabrueck Muenchen ) 1 2.00 UNLIMITED
+  Kassel_Frankfurt ( Kassel Frankfurt ) 1 2.00 UNLIMITED
+  Kassel_Darmstadt ( Kassel Darmstadt ) 1 2.00 UNLIMITED
+  Kassel_Mannheim ( Kassel Mannheim ) 1 2.00 UNLIMITED
+  Kassel_Giessen ( Kassel Giessen ) 1 2.00 UNLIMITED
+  Kassel_Fulda ( Kassel Fulda ) 1 2.00 UNLIMITED
+  Kassel_Stuttgart ( Kassel Stuttgart ) 1 2.00 UNLIMITED
+  Kassel_Karlsruhe ( Kassel Karlsruhe ) 1 2.00 UNLIMITED
+  Kassel_Muenchen ( Kassel Muenchen ) 1 2.00 UNLIMITED
+  Kassel_Nuernberg ( Kassel Nuernberg ) 1 2.00 UNLIMITED
+  Frankfurt_Darmstadt ( Frankfurt Darmstadt ) 1 25.00 UNLIMITED
+  Frankfurt_Mannheim ( Frankfurt Mannheim ) 1 35.00 UNLIMITED
+  Frankfurt_Kaiserslautern ( Frankfurt Kaiserslautern ) 1 2.00 UNLIMITED
+  Frankfurt_Giessen ( Frankfurt Giessen ) 1 9.00 UNLIMITED
+  Frankfurt_Trier ( Frankfurt Trier ) 1 2.00 UNLIMITED
+  Frankfurt_Fulda ( Frankfurt Fulda ) 1 2.00 UNLIMITED
+  Frankfurt_Saarbruecken ( Frankfurt Saarbruecken ) 1 5.00 UNLIMITED
+  Frankfurt_Stuttgart ( Frankfurt Stuttgart ) 1 19.00 UNLIMITED
+  Frankfurt_Karlsruhe ( Frankfurt Karlsruhe ) 1 8.00 UNLIMITED
+  Frankfurt_Ulm ( Frankfurt Ulm ) 1 5.00 UNLIMITED
+  Frankfurt_Konstanz ( Frankfurt Konstanz ) 1 3.00 UNLIMITED
+  Frankfurt_Freiburg ( Frankfurt Freiburg ) 1 2.00 UNLIMITED
+  Frankfurt_Muenchen ( Frankfurt Muenchen ) 1 3.00 UNLIMITED
+  Frankfurt_Augsburg ( Frankfurt Augsburg ) 1 2.00 UNLIMITED
+  Frankfurt_Kempten ( Frankfurt Kempten ) 1 2.00 UNLIMITED
+  Frankfurt_Passau ( Frankfurt Passau ) 1 2.00 UNLIMITED
+  Frankfurt_Nuernberg ( Frankfurt Nuernberg ) 1 23.00 UNLIMITED
+  Frankfurt_Bayreuth ( Frankfurt Bayreuth ) 1 2.00 UNLIMITED
+  Frankfurt_Wuerzburg ( Frankfurt Wuerzburg ) 1 3.00 UNLIMITED
+  Frankfurt_Regensburg ( Frankfurt Regensburg ) 1 2.00 UNLIMITED
+  Darmstadt_Mannheim ( Darmstadt Mannheim ) 1 4.00 UNLIMITED
+  Darmstadt_Kaiserslautern ( Darmstadt Kaiserslautern ) 1 2.00 UNLIMITED
+  Darmstadt_Giessen ( Darmstadt Giessen ) 1 2.00 UNLIMITED
+  Darmstadt_Trier ( Darmstadt Trier ) 1 3.00 UNLIMITED
+  Darmstadt_Fulda ( Darmstadt Fulda ) 1 2.00 UNLIMITED
+  Darmstadt_Saarbruecken ( Darmstadt Saarbruecken ) 1 2.00 UNLIMITED
+  Darmstadt_Stuttgart ( Darmstadt Stuttgart ) 1 2.00 UNLIMITED
+  Darmstadt_Karlsruhe ( Darmstadt Karlsruhe ) 1 2.00 UNLIMITED
+  Darmstadt_Ulm ( Darmstadt Ulm ) 1 2.00 UNLIMITED
+  Darmstadt_Freiburg ( Darmstadt Freiburg ) 1 2.00 UNLIMITED
+  Darmstadt_Muenchen ( Darmstadt Muenchen ) 1 2.00 UNLIMITED
+  Darmstadt_Augsburg ( Darmstadt Augsburg ) 1 2.00 UNLIMITED
+  Darmstadt_Nuernberg ( Darmstadt Nuernberg ) 1 2.00 UNLIMITED
+  Darmstadt_Wuerzburg ( Darmstadt Wuerzburg ) 1 2.00 UNLIMITED
+  Mannheim_Kaiserslautern ( Mannheim Kaiserslautern ) 1 4.00 UNLIMITED
+  Mannheim_Giessen ( Mannheim Giessen ) 1 2.00 UNLIMITED
+  Mannheim_Trier ( Mannheim Trier ) 1 2.00 UNLIMITED
+  Mannheim_Fulda ( Mannheim Fulda ) 1 2.00 UNLIMITED
+  Mannheim_Saarbruecken ( Mannheim Saarbruecken ) 1 5.00 UNLIMITED
+  Mannheim_Stuttgart ( Mannheim Stuttgart ) 1 5.00 UNLIMITED
+  Mannheim_Karlsruhe ( Mannheim Karlsruhe ) 1 4.00 UNLIMITED
+  Mannheim_Ulm ( Mannheim Ulm ) 1 2.00 UNLIMITED
+  Mannheim_Konstanz ( Mannheim Konstanz ) 1 2.00 UNLIMITED
+  Mannheim_Freiburg ( Mannheim Freiburg ) 1 2.00 UNLIMITED
+  Mannheim_Muenchen ( Mannheim Muenchen ) 1 2.00 UNLIMITED
+  Mannheim_Augsburg ( Mannheim Augsburg ) 1 2.00 UNLIMITED
+  Mannheim_Kempten ( Mannheim Kempten ) 1 2.00 UNLIMITED
+  Mannheim_Nuernberg ( Mannheim Nuernberg ) 1 2.00 UNLIMITED
+  Mannheim_Bayreuth ( Mannheim Bayreuth ) 1 2.00 UNLIMITED
+  Mannheim_Wuerzburg ( Mannheim Wuerzburg ) 1 2.00 UNLIMITED
+  Kaiserslautern_Trier ( Kaiserslautern Trier ) 1 2.00 UNLIMITED
+  Kaiserslautern_Saarbruecken ( Kaiserslautern Saarbruecken ) 1 2.00 UNLIMITED
+  Kaiserslautern_Stuttgart ( Kaiserslautern Stuttgart ) 1 2.00 UNLIMITED
+  Kaiserslautern_Karlsruhe ( Kaiserslautern Karlsruhe ) 1 3.00 UNLIMITED
+  Kaiserslautern_Muenchen ( Kaiserslautern Muenchen ) 1 2.00 UNLIMITED
+  Giessen_Fulda ( Giessen Fulda ) 1 2.00 UNLIMITED
+  Giessen_Stuttgart ( Giessen Stuttgart ) 1 2.00 UNLIMITED
+  Giessen_Karlsruhe ( Giessen Karlsruhe ) 1 2.00 UNLIMITED
+  Giessen_Muenchen ( Giessen Muenchen ) 1 2.00 UNLIMITED
+  Giessen_Nuernberg ( Giessen Nuernberg ) 1 2.00 UNLIMITED
+  Giessen_Wuerzburg ( Giessen Wuerzburg ) 1 2.00 UNLIMITED
+  Trier_Saarbruecken ( Trier Saarbruecken ) 1 2.00 UNLIMITED
+  Trier_Stuttgart ( Trier Stuttgart ) 1 2.00 UNLIMITED
+  Trier_Karlsruhe ( Trier Karlsruhe ) 1 2.00 UNLIMITED
+  Trier_Muenchen ( Trier Muenchen ) 1 2.00 UNLIMITED
+  Fulda_Stuttgart ( Fulda Stuttgart ) 1 2.00 UNLIMITED
+  Fulda_Karlsruhe ( Fulda Karlsruhe ) 1 2.00 UNLIMITED
+  Fulda_Muenchen ( Fulda Muenchen ) 1 2.00 UNLIMITED
+  Fulda_Nuernberg ( Fulda Nuernberg ) 1 2.00 UNLIMITED
+  Fulda_Bayreuth ( Fulda Bayreuth ) 1 2.00 UNLIMITED
+  Fulda_Wuerzburg ( Fulda Wuerzburg ) 1 2.00 UNLIMITED
+  Saarbruecken_Stuttgart ( Saarbruecken Stuttgart ) 1 2.00 UNLIMITED
+  Saarbruecken_Karlsruhe ( Saarbruecken Karlsruhe ) 1 2.00 UNLIMITED
+  Saarbruecken_Freiburg ( Saarbruecken Freiburg ) 1 2.00 UNLIMITED
+  Saarbruecken_Muenchen ( Saarbruecken Muenchen ) 1 2.00 UNLIMITED
+  Saarbruecken_Augsburg ( Saarbruecken Augsburg ) 1 2.00 UNLIMITED
+  Saarbruecken_Nuernberg ( Saarbruecken Nuernberg ) 1 2.00 UNLIMITED
+  Stuttgart_Karlsruhe ( Stuttgart Karlsruhe ) 1 35.00 UNLIMITED
+  Stuttgart_Ulm ( Stuttgart Ulm ) 1 11.00 UNLIMITED
+  Stuttgart_Konstanz ( Stuttgart Konstanz ) 1 4.00 UNLIMITED
+  Stuttgart_Freiburg ( Stuttgart Freiburg ) 1 6.00 UNLIMITED
+  Stuttgart_Muenchen ( Stuttgart Muenchen ) 1 30.00 UNLIMITED
+  Stuttgart_Augsburg ( Stuttgart Augsburg ) 1 2.00 UNLIMITED
+  Stuttgart_Kempten ( Stuttgart Kempten ) 1 2.00 UNLIMITED
+  Stuttgart_Passau ( Stuttgart Passau ) 1 2.00 UNLIMITED
+  Stuttgart_Nuernberg ( Stuttgart Nuernberg ) 1 35.00 UNLIMITED
+  Stuttgart_Bayreuth ( Stuttgart Bayreuth ) 1 2.00 UNLIMITED
+  Stuttgart_Wuerzburg ( Stuttgart Wuerzburg ) 1 2.00 UNLIMITED
+  Stuttgart_Regensburg ( Stuttgart Regensburg ) 1 2.00 UNLIMITED
+  Karlsruhe_Ulm ( Karlsruhe Ulm ) 1 2.00 UNLIMITED
+  Karlsruhe_Konstanz ( Karlsruhe Konstanz ) 1 2.00 UNLIMITED
+  Karlsruhe_Freiburg ( Karlsruhe Freiburg ) 1 5.00 UNLIMITED
+  Karlsruhe_Muenchen ( Karlsruhe Muenchen ) 1 4.00 UNLIMITED
+  Karlsruhe_Augsburg ( Karlsruhe Augsburg ) 1 2.00 UNLIMITED
+  Karlsruhe_Kempten ( Karlsruhe Kempten ) 1 2.00 UNLIMITED
+  Karlsruhe_Nuernberg ( Karlsruhe Nuernberg ) 1 2.00 UNLIMITED
+  Karlsruhe_Bayreuth ( Karlsruhe Bayreuth ) 1 2.00 UNLIMITED
+  Karlsruhe_Wuerzburg ( Karlsruhe Wuerzburg ) 1 2.00 UNLIMITED
+  Ulm_Konstanz ( Ulm Konstanz ) 1 2.00 UNLIMITED
+  Ulm_Muenchen ( Ulm Muenchen ) 1 2.00 UNLIMITED
+  Ulm_Augsburg ( Ulm Augsburg ) 1 2.00 UNLIMITED
+  Ulm_Kempten ( Ulm Kempten ) 1 2.00 UNLIMITED
+  Ulm_Nuernberg ( Ulm Nuernberg ) 1 2.00 UNLIMITED
+  Ulm_Wuerzburg ( Ulm Wuerzburg ) 1 2.00 UNLIMITED
+  Konstanz_Freiburg ( Konstanz Freiburg ) 1 3.00 UNLIMITED
+  Konstanz_Muenchen ( Konstanz Muenchen ) 1 5.00 UNLIMITED
+  Konstanz_Augsburg ( Konstanz Augsburg ) 1 2.00 UNLIMITED
+  Konstanz_Kempten ( Konstanz Kempten ) 1 2.00 UNLIMITED
+  Konstanz_Bayreuth ( Konstanz Bayreuth ) 1 2.00 UNLIMITED
+  Freiburg_Muenchen ( Freiburg Muenchen ) 1 2.00 UNLIMITED
+  Muenchen_Augsburg ( Muenchen Augsburg ) 1 20.00 UNLIMITED
+  Muenchen_Kempten ( Muenchen Kempten ) 1 2.00 UNLIMITED
+  Muenchen_Passau ( Muenchen Passau ) 1 5.00 UNLIMITED
+  Muenchen_Nuernberg ( Muenchen Nuernberg ) 1 32.00 UNLIMITED
+  Muenchen_Bayreuth ( Muenchen Bayreuth ) 1 2.00 UNLIMITED
+  Muenchen_Wuerzburg ( Muenchen Wuerzburg ) 1 3.00 UNLIMITED
+  Muenchen_Regensburg ( Muenchen Regensburg ) 1 2.00 UNLIMITED
+  Augsburg_Kempten ( Augsburg Kempten ) 1 2.00 UNLIMITED
+  Augsburg_Nuernberg ( Augsburg Nuernberg ) 1 2.00 UNLIMITED
+  Augsburg_Bayreuth ( Augsburg Bayreuth ) 1 2.00 UNLIMITED
+  Augsburg_Wuerzburg ( Augsburg Wuerzburg ) 1 2.00 UNLIMITED
+  Passau_Nuernberg ( Passau Nuernberg ) 1 2.00 UNLIMITED
+  Passau_Bayreuth ( Passau Bayreuth ) 1 2.00 UNLIMITED
+  Passau_Wuerzburg ( Passau Wuerzburg ) 1 2.00 UNLIMITED
+  Passau_Regensburg ( Passau Regensburg ) 1 2.00 UNLIMITED
+  Nuernberg_Bayreuth ( Nuernberg Bayreuth ) 1 5.00 UNLIMITED
+  Nuernberg_Wuerzburg ( Nuernberg Wuerzburg ) 1 10.00 UNLIMITED
+  Nuernberg_Regensburg ( Nuernberg Regensburg ) 1 9.00 UNLIMITED
+  Bayreuth_Wuerzburg ( Bayreuth Wuerzburg ) 1 3.00 UNLIMITED
+  Bayreuth_Regensburg ( Bayreuth Regensburg ) 1 3.00 UNLIMITED
+)
+
+# ADMISSIBLE PATHS SECTION
+#
+# <demand_id> ( {<path_id> ( <link_id>+ )}+ )
+
+ADMISSIBLE_PATHS ( 
+)
