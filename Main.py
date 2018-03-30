@@ -21,11 +21,12 @@ request_list = Input.get_requests(5, [2, 4], [20, 50], [0.9, 0.99])
 
 
 """ 部署 """
-request_placement, instance_registry, instance_num, rest_bandwidth, flow_matrix_request = DeployAlgorithm.greedy_deploy(bandwidth, node_list, request_list)
+band_cost, instance_cost = Evaluate.evaluate(node_list, bandwidth, node_pos, request_list,
+                                             DeployAlgorithm.extend_deploy(bandwidth, node_list, request_list))
 
+band_cost, instance_cost = Evaluate.evaluate(node_list, bandwidth, node_pos, request_list,
+                                             DeployAlgorithm.random_deploy(bandwidth, node_list, request_list))
 
-""" 结果 """
-band_cost, instance_cost = Evaluate.evaluate(node_list, bandwidth, rest_bandwidth, node_pos, request_placement, instance_num, flow_matrix_request, request_list)
 
 """ 多轮实验 """
 
