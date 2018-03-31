@@ -1,11 +1,11 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-import NetworkInfo as ni
-import DeployAlgorithm
+from algorithm import ExtendAlgorithm
+from algorithm import RandomAlgorithm
+from algorithm import VNEAlgorithm
 import Input
 import Evaluate
-import copy
 
 """ 输入 """
 nodes_file = "./resources/nodes.csv"
@@ -22,10 +22,13 @@ request_list = Input.get_requests(5, [2, 4], [20, 50], [0.9, 0.99])
 
 """ 部署 """
 band_cost, instance_cost = Evaluate.evaluate(node_list, bandwidth, node_pos, request_list,
-                                             DeployAlgorithm.extend_deploy(bandwidth, node_list, request_list))
+                                             ExtendAlgorithm.extend_deploy(bandwidth, node_list, request_list))
 
 band_cost, instance_cost = Evaluate.evaluate(node_list, bandwidth, node_pos, request_list,
-                                             DeployAlgorithm.random_deploy(bandwidth, node_list, request_list))
+                                             RandomAlgorithm.random_deploy(bandwidth, node_list, request_list))
+
+band_cost, instance_cost = Evaluate.evaluate(node_list, bandwidth, node_pos, request_list,
+                                             VNEAlgorithm.vne_deploy(bandwidth, node_list, request_list))
 
 
 """ 多轮实验 """

@@ -1,8 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-import NetworkInfo as ni
-import DeployAlgorithm
 import networkx as nx
 import matplotlib.pyplot as plt
 import numpy as np
